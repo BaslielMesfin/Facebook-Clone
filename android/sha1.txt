@@ -1,0 +1,90 @@
+﻿> Task :gradle:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle:compileKotlin UP-TO-DATE
+> Task :gradle:compileJava NO-SOURCE
+> Task :gradle:compileGroovy NO-SOURCE
+> Task :gradle:pluginDescriptors UP-TO-DATE
+> Task :gradle:processResources UP-TO-DATE
+> Task :gradle:classes UP-TO-DATE
+> Task :gradle:jar UP-TO-DATE
+
+> Task :app:signingReport
+Variant: debug
+Config: debug
+Store: C:\Users\H\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: E9:59:3F:8C:BC:B7:CA:B5:0C:15:A0:D0:49:FA:60:59
+SHA1: 8B:F8:5A:D4:E5:C0:38:41:CC:54:2B:25:14:AC:4F:0C:31:F8:51:C7
+SHA-256: 0F:DE:0D:38:81:8B:D9:E6:56:13:EF:E8:E5:55:D2:32:D5:A2:D9:34:CF:8C:22:63:F9:ED:4F:42:B5:89:EF:29
+Valid until: Wednesday, December 15, 2055
+----------
+Variant: release
+Config: debug
+Store: C:\Users\H\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: E9:59:3F:8C:BC:B7:CA:B5:0C:15:A0:D0:49:FA:60:59
+SHA1: 8B:F8:5A:D4:E5:C0:38:41:CC:54:2B:25:14:AC:4F:0C:31:F8:51:C7
+SHA-256: 0F:DE:0D:38:81:8B:D9:E6:56:13:EF:E8:E5:55:D2:32:D5:A2:D9:34:CF:8C:22:63:F9:ED:4F:42:B5:89:EF:29
+Valid until: Wednesday, December 15, 2055
+----------
+Variant: profile
+Config: debug
+Store: C:\Users\H\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: E9:59:3F:8C:BC:B7:CA:B5:0C:15:A0:D0:49:FA:60:59
+SHA1: 8B:F8:5A:D4:E5:C0:38:41:CC:54:2B:25:14:AC:4F:0C:31:F8:51:C7
+SHA-256: 0F:DE:0D:38:81:8B:D9:E6:56:13:EF:E8:E5:55:D2:32:D5:A2:D9:34:CF:8C:22:63:F9:ED:4F:42:B5:89:EF:29
+Valid until: Wednesday, December 15, 2055
+----------
+Variant: debugAndroidTest
+Config: debug
+Store: C:\Users\H\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: E9:59:3F:8C:BC:B7:CA:B5:0C:15:A0:D0:49:FA:60:59
+SHA1: 8B:F8:5A:D4:E5:C0:38:41:CC:54:2B:25:14:AC:4F:0C:31:F8:51:C7
+SHA-256: 0F:DE:0D:38:81:8B:D9:E6:56:13:EF:E8:E5:55:D2:32:D5:A2:D9:34:CF:8C:22:63:F9:ED:4F:42:B5:89:EF:29
+Valid until: Wednesday, December 15, 2055
+----------
+
+> Task :firebase_auth:signingReport
+Variant: debugAndroidTest
+Config: debug
+Store: C:\Users\H\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: E9:59:3F:8C:BC:B7:CA:B5:0C:15:A0:D0:49:FA:60:59
+SHA1: 8B:F8:5A:D4:E5:C0:38:41:CC:54:2B:25:14:AC:4F:0C:31:F8:51:C7
+SHA-256: 0F:DE:0D:38:81:8B:D9:E6:56:13:EF:E8:E5:55:D2:32:D5:A2:D9:34:CF:8C:22:63:F9:ED:4F:42:B5:89:EF:29
+Valid until: Wednesday, December 15, 2055
+----------
+
+> Task :firebase_core:signingReport
+Variant: debugAndroidTest
+Config: debug
+Store: C:\Users\H\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: E9:59:3F:8C:BC:B7:CA:B5:0C:15:A0:D0:49:FA:60:59
+SHA1: 8B:F8:5A:D4:E5:C0:38:41:CC:54:2B:25:14:AC:4F:0C:31:F8:51:C7
+SHA-256: 0F:DE:0D:38:81:8B:D9:E6:56:13:EF:E8:E5:55:D2:32:D5:A2:D9:34:CF:8C:22:63:F9:ED:4F:42:B5:89:EF:29
+Valid until: Wednesday, December 15, 2055
+----------
+
+> Task :google_sign_in_android:signingReport
+Variant: debugAndroidTest
+Config: debug
+Store: C:\Users\H\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: E9:59:3F:8C:BC:B7:CA:B5:0C:15:A0:D0:49:FA:60:59
+SHA1: 8B:F8:5A:D4:E5:C0:38:41:CC:54:2B:25:14:AC:4F:0C:31:F8:51:C7
+SHA-256: 0F:DE:0D:38:81:8B:D9:E6:56:13:EF:E8:E5:55:D2:32:D5:A2:D9:34:CF:8C:22:63:F9:ED:4F:42:B5:89:EF:29
+Valid until: Wednesday, December 15, 2055
+----------
+
+[Incubating] Problems report is available at: file:///C:/Users/H/AndroidStudioProjects/facebook_UI/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.12/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 6s
+8 actionable tasks: 4 executed, 4 up-to-date

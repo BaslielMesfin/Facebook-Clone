@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "162180021634",
+    "project_id": "fblab-8408f",
+    "storage_bucket": "fblab-8408f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162180021634:android:e050679a6413d0b7e9239b",
+        "android_client_info": {
+          "package_name": "com.example.facebook_ui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "162180021634-6eaaqil7emdqo1umml4nl6b6316umk6s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLD7yMHbsutjtanTUSfGNzBslZGvQMYxg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "162180021634-6eaaqil7emdqo1umml4nl6b6316umk6s.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "162180021634-hhmm5fi3u80bqn0el1d3di8astri3ejp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.facebookUi"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
