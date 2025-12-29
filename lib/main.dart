@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
-import 'signup_page.dart';
+import 'splash_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,7 +18,7 @@ class FacebookUiClone extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Facebook UI Clone',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: const SignUpPage(),
+      home: const SplashScreen(),
     );
   }
 }
