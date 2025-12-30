@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+// import 'package:sign_in_with_apple/sign_in_with_apple.dart'; // Temporarily disabled
 import 'home_page.dart';
 
 class SignUpPage extends StatefulWidget {
@@ -85,13 +86,55 @@ class _SignUpPageState extends State<SignUpPage> {
     }
   }
 
-  // Function for Apple Sign Up (Stub)
+  // Function for Apple Sign Up - TEMPORARILY DISABLED
   Future<void> _signUpWithApple() async {
-    // Basic placeholder for Apple Sign In
-    print("Apple Sign In Clicked");
+    // Temporarily disabled while debugging
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Apple Sign In Clicked (Stub)')),
+      const SnackBar(
+        content: Text('Apple Sign-In temporarily disabled for testing'),
+      ),
     );
+
+    /* ORIGINAL APPLE SIGN-IN CODE - COMMENTED OUT FOR DEBUGGING
+    try {
+      // Request Apple ID credential
+      final appleCredential = await SignInWithApple.getAppleIDCredential(
+        scopes: [
+          AppleIDAuthorizationScopes.email,
+          AppleIDAuthorizationScopes.fullName,
+        ],
+      );
+
+      // Create OAuth credential for Firebase
+      final oauthCredential = OAuthProvider("apple.com").credential(
+        idToken: appleCredential.identityToken,
+        accessToken: appleCredential.authorizationCode,
+      );
+
+      // Sign in with Firebase
+      await FirebaseAuth.instance.signInWithCredential(oauthCredential);
+      print("Apple Sign In Successful!");
+
+      if (!mounted) return;
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Apple Sign In Successful!')),
+      );
+
+      // Navigate to the Dashboard (FacebookHomePage)
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const FacebookHomePage()),
+      );
+    } catch (e) {
+      print("Apple Sign In Error: $e");
+      if (mounted) {
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(SnackBar(content: Text('Apple Sign In Failed: $e')));
+      }
+    }
+    */
   }
 
   @override

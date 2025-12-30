@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'signup_page.dart';
 
 class FacebookHomePage extends StatelessWidget {
   const FacebookHomePage({super.key});
@@ -25,6 +27,21 @@ class FacebookHomePage extends StatelessWidget {
           IconButton(
             icon: const Icon(Icons.messenger_outline, color: Colors.black),
             onPressed: () {},
+          ),
+          IconButton(
+            icon: const Icon(Icons.logout, color: Colors.black),
+            onPressed: () async {
+              // Sign out from Firebase
+              await FirebaseAuth.instance.signOut();
+              // Navigate back to SignUpPage
+              if (context.mounted) {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => const SignUpPage()),
+                );
+              }
+            },
+            tooltip: 'Logout',
           ),
         ],
       ),
