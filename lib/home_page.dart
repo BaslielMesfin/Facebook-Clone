@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'signup_page.dart';
+import 'notifications_page.dart';
+import 'menu_page.dart';
 
 class FacebookHomePage extends StatelessWidget {
   const FacebookHomePage({super.key});
@@ -73,12 +75,32 @@ class FacebookHomePage extends StatelessWidget {
                     color: Colors.grey,
                     size: 30,
                   ),
-                  const Icon(
-                    Icons.notifications_none,
-                    color: Colors.grey,
-                    size: 30,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const NotificationsPage(),
+                        ),
+                      );
+                    },
+                    child: const Icon(
+                      Icons.notifications_none,
+                      color: Colors.grey,
+                      size: 30,
+                    ),
                   ),
-                  const Icon(Icons.menu, color: Colors.grey, size: 30),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const MenuPage(),
+                        ),
+                      );
+                    },
+                    child: const Icon(Icons.menu, color: Colors.grey, size: 30),
+                  ),
                 ],
               ),
             ),
